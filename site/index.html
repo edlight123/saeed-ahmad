@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en" class="no-js" style="color-scheme: light dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Saeed Ahmad – Modern Portfolio</title>
+    <meta name="description" content="Portfolio website for Saeed Ahmad: research, projects, publications, and contact.">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='16' fill='%23006adc'/><text x='50' y='62' font-size='56' text-anchor='middle' fill='white' font-family='sans-serif'>S</text></svg>">
+    <meta property="og:title" content="Saeed Ahmad" />
+    <meta property="og:description" content="Research, projects, publications, and more." />
+    <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/avatar.svg" />
+    <meta name="theme-color" content="#0b0f19" media="(prefers-color-scheme: dark)">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+
+    <link rel="preload" as="image" href="assets/avatar.svg">
+    <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.documentElement.classList.remove('no-js');
+      (function() {
+        const pref = localStorage.getItem('theme');
+        if (pref === 'dark' || (!pref && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.dataset.theme = 'dark';
+        } else {
+          document.documentElement.dataset.theme = 'light';
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#home" aria-label="Saeed Ahmad home">
+          <img src="assets/avatar.svg" alt="S logo" width="32" height="32" />
+          <span class="brand-name">Saeed Ahmad</span>
+        </a>
+        <nav class="nav" aria-label="Primary">
+          <button class="nav-toggle" aria-expanded="false" aria-label="Open menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-list">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Education</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#publications">Press</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li>
+              <button class="theme-toggle" aria-label="Toggle theme" title="Toggle theme">
+                <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0V4a1 1 0 0 1 1-1Zm0 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm8-4a1 1 0 0 1 1 1h1a1 1 0 1 1 0 2h-1a1 1 0 1 1-2 0 1 1 0 0 1 1-1Zm-8 6a1 1 0 0 1 1 1v1a1 1 0 1 1-2 0v-1a1 1 0 0 1 1-1ZM3 12a1 1 0 0 1 1-1H5a1 1 0 1 1 0 2H4a1 1 0 0 1-1-1Zm12.95-6.536a1 1 0 0 1 1.414 0l.707.707a1 1 0 1 1-1.414 1.415l-.707-.708a1 1 0 0 1 0-1.414ZM4.636 4.95a1 1 0 0 1 1.414 0l.707.707A1 1 0 1 1 5.343 7.07l-.707-.707a1 1 0 0 1 0-1.414Zm12.728 12.728a1 1 0 0 1 1.414 0l.707.707a1 1 0 0 1-1.414 1.414l-.707-.707a1 1 0 0 1 0-1.414ZM4.636 17.678a1 1 0 0 1 1.414 0l.707.707a1 1 0 1 1-1.414 1.414l-.707-.707a1 1 0 0 1 0-1.414Z"/></svg>
+              </button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main" class="site-main">
+      <section id="home" class="section hero">
+        <div class="container grid-2">
+          <div>
+            <h1 class="mega">Saeed Ahmad</h1>
+            <p class="lead">Researcher and engineer focused on modern AI systems, ML infrastructure, and impactful products.</p>
+            <div class="actions">
+              <a class="btn primary" href="#projects">View Projects</a>
+              <a class="btn" href="#contact">Get in Touch</a>
+            </div>
+            <ul class="meta">
+              <li><strong>Location:</strong> <span>—</span></li>
+              <li><strong>Currently:</strong> <span>—</span></li>
+            </ul>
+          </div>
+          <div class="hero-card">
+            <div class="card glass">
+              <img class="avatar" src="assets/avatar.svg" alt="Portrait placeholder" width="160" height="160" />
+              <div class="badges">
+                <span class="chip">AI/ML</span>
+                <span class="chip">Research</span>
+                <span class="chip">Engineering</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section">
+        <div class="container">
+          <h2>About</h2>
+          <p class="muted">Replace this with a short bio. Summarize your research interests, current role, and what you're excited about. Keep it concise and human.</p>
+          <div class="about-grid">
+            <div class="about-card card">
+              <h3>Expertise</h3>
+              <ul>
+                <li>Large Language Models</li>
+                <li>ML Systems & Infrastructure</li>
+                <li>Responsible AI</li>
+                <li>Developer Tools</li>
+              </ul>
+            </div>
+            <div class="about-card card">
+              <h3>Highlights</h3>
+              <ul>
+                <li>— Award or notable publication</li>
+                <li>— Impact metric or shipped product</li>
+                <li>— Open-source or teaching</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section alt">
+        <div class="container">
+          <h2>Education</h2>
+          <div class="timeline">
+            <article class="item">
+              <div class="item-head">
+                <h3>Role @ Organization</h3>
+                <span class="muted">2023 — Present</span>
+              </div>
+              <p class="muted">One sentence on your impact. Add 2–3 bullets below for key contributions.</p>
+              <ul>
+                <li>Led X to achieve Y.</li>
+                <li>Built Z that saved N hours/week.</li>
+              </ul>
+            </article>
+            <article class="item">
+              <div class="item-head">
+                <h3>Previous Role @ Company</h3>
+                <span class="muted">2020 — 2023</span>
+              </div>
+              <ul>
+                <li>Bullet 1</li>
+                <li>Bullet 2</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section">
+        <div class="container">
+          <h2>Projects</h2>
+          <div class="cards">
+            <article class="card project">
+              <div class="card-head">
+                <h3>Project Name</h3>
+                <div class="tags">
+                  <span class="chip">Python</span>
+                  <span class="chip">LLMs</span>
+                </div>
+              </div>
+              <p class="muted">Short description of the project, the problem it solves, and your role.</p>
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+                <a class="btn small" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </article>
+            <article class="card project">
+              <div class="card-head">
+                <h3>Another Project</h3>
+                <div class="tags">
+                  <span class="chip">TypeScript</span>
+                  <span class="chip">Web</span>
+                </div>
+              </div>
+              <p class="muted">Another description. Keep it to 1–2 lines for scannability.</p>
+              <div class="card-actions">
+                <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+                <a class="btn small" href="#" target="_blank" rel="noopener">Code</a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section">
+        <div class="container">
+          <h2>Skills</h2>
+          <div class="skills-chips"></div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section alt">
+        <div class="container">
+          <h2>Gallery</h2>
+          <div class="gallery-grid"></div>
+        </div>
+      </section>
+
+      <section id="publications" class="section">
+        <div class="container">
+          <h2>Press</h2>
+          <ul class="pub-list">
+            <li>
+              <span class="pub-title">Title of a paper</span>
+              <span class="pub-meta muted">Venue, Year</span>
+              <a class="link" href="#" target="_blank" rel="noopener">PDF</a>
+            </li>
+            <li>
+              <span class="pub-title">Another paper</span>
+              <span class="pub-meta muted">Venue, Year</span>
+              <a class="link" href="#" target="_blank" rel="noopener">PDF</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section id="contact" class="section">
+        <div class="container">
+          <h2>Contact</h2>
+          <p class="muted">Prefer email. For faster responses, include context: your goals, timeline, and relevant links.</p>
+          <div class="contact-actions">
+            <a class="btn primary" href="mailto:hello@example.com">Email</a>
+            <a class="btn" href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            <a class="btn" href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn" href="#" target="_blank" rel="noopener">CV</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p class="muted">© <span id="year"></span> Saeed Ahmad. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Saeed Ahmad",
+        "url": "https://saeed-ahmad.com/",
+        "sameAs": [
+          "https://github.com/",
+          "https://www.linkedin.com/"
+        ],
+        "jobTitle": "Researcher & Engineer"
+      }
+    </script>
+    <script src="script.js" defer></script>
+  </body>
+</html>
