@@ -15,7 +15,7 @@ A modern, responsive portfolio website for Saeed Ahmad, Harvard Law J.D. '24.
 - **HTML5**: Semantic markup
 - **CSS3**: Modern features including CSS Grid, Flexbox, Custom Properties
 - **JavaScript**: Vanilla JS with AOS (Animate On Scroll) library
-- **Fonts**: Inter (body) and Playfair Display (headings)
+- **Fonts**: Source Serif Pro (body) and Cormorant Garamond (headings)
 - **Icons**: Font Awesome 6
 
 ## 📱 Sections
