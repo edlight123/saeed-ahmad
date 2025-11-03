@@ -3,114 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Speaking - Saeed Ahmad</title>
-    <meta name="description" content="Speaking - Saeed Ahmad, Harvard Law J.D. '24">
+    <title>Speaking Engagements - Saeed Ahmad</title>
+    <meta name="description" content="Speaking Engagements - Saeed Ahmad, Harvard Law J.D. '24">
     <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .page-header {
-            padding: 8rem 0 4rem;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .page-header::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
-            animation: gradientShift 15s ease infinite;
-        }
-        
-        .page-header .container {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .page-title {
-            font-size: clamp(2.5rem, 6vw, 4rem);
-            color: white;
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-        
-        .page-subtitle {
-            font-size: 1.2rem;
-            color: var(--accent-light);
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        .content-section {
-            padding: var(--spacing-xl) 0;
-        }
-        
-        .content-card {
-            background: white;
-            padding: var(--spacing-lg);
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            margin-bottom: var(--spacing-md);
-        }
-        
-        .content-card h3 {
-            color: var(--primary);
-            margin-bottom: var(--spacing-md);
-            font-size: 1.8rem;
-        }
-        
-        .content-card p {
-            color: var(--text-secondary);
-            line-height: 1.8;
-            margin-bottom: var(--spacing-sm);
-        }
-    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="/" class="logo">Saeed Ahmad</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="/" class="nav-link">Home</a></li>
-                <li><a href="/education/" class="nav-link">Education</a></li>
-                <li><a href="/skills/" class="nav-link">Skills</a></li>
-                <li><a href="/books/" class="nav-link">Books</a></li>
-                <li><a href="/speaking/" class="nav-link">Speaking</a></li>
-                <li><a href="/interviews/" class="nav-link">Interviews</a></li>
-                <li><a href="/portfolio/" class="nav-link">Portfolio</a></li>
-                <li><a href="/press/" class="nav-link">Press</a></li>
-                <li><a href="/contact/" class="nav-link">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">More <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/consulting/">Consulting</a></li>
-                        <li><a href="/book-now/">Book Now</a></li>
-                        <li><a href="/sponsars/">Sponsors</a></li>
-                    </ul>
-                </li>
-                <li><a href="/wp-content/uploads/2023/08/Ahmad_Saeed-Resume.pdf" class="nav-link resume-link" target="_blank">Resume <i class="fas fa-download"></i></a></li>
-            </ul>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="/" class="logo">Saeed Ahmad</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/education/" class="nav-link">Education</a></li>
+                    <li><a href="/skills/" class="nav-link">Skills</a></li>
+                    <li><a href="/portfolio/" class="nav-link">Portfolio</a></li>
+                    <li><a href="/books/" class="nav-link">Books</a></li>
+                    <li><a href="/speaking/" class="nav-link">Speaking</a></li>
+                    <li><a href="/press/" class="nav-link">Press</a></li>
+                    <li><a href="/contact/" class="nav-link btn-contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1 class="page-title" data-aos="fade-up">Speaking</h1>
-            <p class="page-subtitle" data-aos="fade-up" data-aos-delay="200">Public Engagements & Presentations</p>
+            <h1 class="page-title" data-aos="fade-up">Speaking Engagements</h1>
+            <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">Public Presentations & Panel Discussions</p>
         </div>
     </section>
 
@@ -119,13 +50,47 @@
         <div class="container">
             
         <div class="content-card" data-aos="fade-up">
-            <h3><i class="fas fa-microphone-alt"></i> Speaking Engagements</h3>
-            <p>Saeed Ahmad regularly speaks on topics including:</p>
-            <p>• Religious Freedom & Constitutional Law</p>
-            <p>• Legal Education & Career Development</p>
-            <p>• Diversity in Legal Profession</p>
-            <p>• Intellectual Property in Fashion</p>
-            <p>• Pakistani-American Legal Perspectives</p>
+            <div class="card-icon">
+                <i class="fas fa-microphone-alt"></i>
+            </div>
+            <h3>Topics & Expertise</h3>
+            <p>Saeed Ahmad is available for speaking engagements on a variety of legal and professional topics.</p>
+        </div>
+        
+        <div class="content-card" data-aos="fade-up" data-aos-delay="100">
+            <h3>Speaking Topics Include:</h3>
+            <div class="topic-grid">
+                <div class="topic-item">
+                    <i class="fas fa-praying-hands"></i>
+                    <h4>Religious Freedom & Constitutional Law</h4>
+                    <p>Insights from work at Harvard's Religious Freedom Clinic</p>
+                </div>
+                <div class="topic-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <h4>Legal Education & Career Development</h4>
+                    <p>Journey from community college to Harvard Law School</p>
+                </div>
+                <div class="topic-item">
+                    <i class="fas fa-users"></i>
+                    <h4>Diversity in the Legal Profession</h4>
+                    <p>Building inclusive legal communities</p>
+                </div>
+                <div class="topic-item">
+                    <i class="fas fa-tshirt"></i>
+                    <h4>Intellectual Property in Fashion</h4>
+                    <p>Copyright protection and legal frameworks</p>
+                </div>
+                <div class="topic-item">
+                    <i class="fas fa-globe"></i>
+                    <h4>Pakistani-American Legal Perspectives</h4>
+                    <p>Cross-cultural legal practice and understanding</p>
+                </div>
+                <div class="topic-item">
+                    <i class="fas fa-balance-scale"></i>
+                    <h4>International Clerkships</h4>
+                    <p>Experience at the Supreme Court of Pakistan</p>
+                </div>
+            </div>
         </div>
         
         </div>
@@ -135,34 +100,34 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
+                <div class="footer-info">
                     <h3>Saeed Ahmad</h3>
                     <p>Harvard Law School J.D. '24</p>
-                    <p>Attorney at Law</p>
+                    <p>Visiting Fellow, Religious Freedom Clinic</p>
                 </div>
-                <div class="footer-section">
+                <div class="footer-links">
                     <h4>Quick Links</h4>
-                    <ul class="footer-links">
+                    <ul>
                         <li><a href="/education/">Education</a></li>
-                        <li><a href="/skills/">Skills</a></li>
                         <li><a href="/portfolio/">Portfolio</a></li>
+                        <li><a href="/speaking/">Speaking</a></li>
                         <li><a href="/contact/">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-contact">
                     <h4>Connect</h4>
                     <div class="footer-social">
                         <a href="https://www.linkedin.com/in/saeedahmad-" target="_blank" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://www.facebook.com/saeedahmaducla" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://twitter.com/_saeedahmad?lang=en" target="_blank" aria-label="Twitter">
+                        <a href="https://twitter.com/_saeedahmad" target="_blank" aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://www.instagram.com/_saeedahmad/?hl=en" target="_blank" aria-label="Instagram">
+                        <a href="https://www.instagram.com/_saeedahmad/" target="_blank" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/saeedahmaducla" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
                         </a>
                     </div>
                 </div>
@@ -173,14 +138,7 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="../script.js"></script>
 </body>
 </html>

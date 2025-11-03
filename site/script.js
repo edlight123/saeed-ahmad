@@ -49,3 +49,13 @@ window.addEventListener('scroll', () => {
         navbar.style.boxShadow = 'none';
     }
 });
+
+// Initialize AOS (Animate On Scroll) if available
+if (typeof AOS !== 'undefined') {
+    AOS.init({
+        duration: 800,
+        easing: 'ease-in-out',
+        once: true,
+        offset: 100
+    });
+}

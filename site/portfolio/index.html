@@ -3,114 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Saeed Ahmad</title>
-    <meta name="description" content="Portfolio - Saeed Ahmad, Harvard Law J.D. '24">
+    <title>Professional Portfolio - Saeed Ahmad</title>
+    <meta name="description" content="Professional Portfolio - Saeed Ahmad, Harvard Law J.D. '24">
     <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .page-header {
-            padding: 8rem 0 4rem;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .page-header::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
-            animation: gradientShift 15s ease infinite;
-        }
-        
-        .page-header .container {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .page-title {
-            font-size: clamp(2.5rem, 6vw, 4rem);
-            color: white;
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-        
-        .page-subtitle {
-            font-size: 1.2rem;
-            color: var(--accent-light);
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        .content-section {
-            padding: var(--spacing-xl) 0;
-        }
-        
-        .content-card {
-            background: white;
-            padding: var(--spacing-lg);
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            margin-bottom: var(--spacing-md);
-        }
-        
-        .content-card h3 {
-            color: var(--primary);
-            margin-bottom: var(--spacing-md);
-            font-size: 1.8rem;
-        }
-        
-        .content-card p {
-            color: var(--text-secondary);
-            line-height: 1.8;
-            margin-bottom: var(--spacing-sm);
-        }
-    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="/" class="logo">Saeed Ahmad</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="/" class="nav-link">Home</a></li>
-                <li><a href="/education/" class="nav-link">Education</a></li>
-                <li><a href="/skills/" class="nav-link">Skills</a></li>
-                <li><a href="/books/" class="nav-link">Books</a></li>
-                <li><a href="/speaking/" class="nav-link">Speaking</a></li>
-                <li><a href="/interviews/" class="nav-link">Interviews</a></li>
-                <li><a href="/portfolio/" class="nav-link">Portfolio</a></li>
-                <li><a href="/press/" class="nav-link">Press</a></li>
-                <li><a href="/contact/" class="nav-link">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">More <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/consulting/">Consulting</a></li>
-                        <li><a href="/book-now/">Book Now</a></li>
-                        <li><a href="/sponsars/">Sponsors</a></li>
-                    </ul>
-                </li>
-                <li><a href="/wp-content/uploads/2023/08/Ahmad_Saeed-Resume.pdf" class="nav-link resume-link" target="_blank">Resume <i class="fas fa-download"></i></a></li>
-            </ul>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="/" class="logo">Saeed Ahmad</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/education/" class="nav-link">Education</a></li>
+                    <li><a href="/skills/" class="nav-link">Skills</a></li>
+                    <li><a href="/portfolio/" class="nav-link">Portfolio</a></li>
+                    <li><a href="/books/" class="nav-link">Books</a></li>
+                    <li><a href="/speaking/" class="nav-link">Speaking</a></li>
+                    <li><a href="/press/" class="nav-link">Press</a></li>
+                    <li><a href="/contact/" class="nav-link btn-contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1 class="page-title" data-aos="fade-up">Portfolio</h1>
-            <p class="page-subtitle" data-aos="fade-up" data-aos-delay="200">Professional Work & Projects</p>
+            <h1 class="page-title" data-aos="fade-up">Professional Portfolio</h1>
+            <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">Experience & Notable Work</p>
         </div>
     </section>
 
@@ -118,22 +49,61 @@
     <section class="content-section">
         <div class="container">
             
-        <div class="content-card" data-aos="fade-up">
-            <h3><i class="fas fa-folder-open"></i> Professional Experience</h3>
-            <p><strong>Harvard Law School Religious Freedom Clinic</strong></p>
-            <p>Visiting Fellow - Current</p>
-            <br>
-            <p><strong>Supreme Court of Pakistan</strong></p>
-            <p>Clerk to Justice Shah - Summer Position</p>
-            <br>
-            <p><strong>Corporate Law Firm, New York City</strong></p>
-            <p>Summer Associate</p>
-            <br>
-            <p><strong>Commercial Litigation Firm, Los Angeles</strong></p>
-            <p>Summer Clerk</p>
-            <br>
-            <p><strong>Louis Vuitton, Beverly Hills</strong></p>
-            <p>Client Advisor - Flagship Store on Rodeo Drive</p>
+        <div class="timeline">
+            <div class="content-card timeline-item" data-aos="fade-up">
+                <div class="timeline-marker"></div>
+                <div class="card-icon">
+                    <i class="fas fa-cross"></i>
+                </div>
+                <h3>Harvard Law School Religious Freedom Clinic</h3>
+                <p class="position">Visiting Fellow</p>
+                <p class="period">Current Position</p>
+                <p>Working on constitutional law cases involving religious freedom and First Amendment rights. Conducting legal research and assisting with client representation.</p>
+            </div>
+            
+            <div class="content-card timeline-item" data-aos="fade-up" data-aos-delay="100">
+                <div class="timeline-marker"></div>
+                <div class="card-icon">
+                    <i class="fas fa-landmark"></i>
+                </div>
+                <h3>Supreme Court of Pakistan</h3>
+                <p class="position">Clerk to Justice Shah</p>
+                <p class="period">Summer Position</p>
+                <p>Assisted in reviewing cases, conducting legal research, and drafting judicial opinions. Gained invaluable insight into international judiciary operations and constitutional law.</p>
+            </div>
+            
+            <div class="content-card timeline-item" data-aos="fade-up" data-aos-delay="200">
+                <div class="timeline-marker"></div>
+                <div class="card-icon">
+                    <i class="fas fa-building"></i>
+                </div>
+                <h3>Corporate Law Firm, New York City</h3>
+                <p class="position">Summer Associate</p>
+                <p class="period">Summer Program</p>
+                <p>Worked on corporate transactions, mergers and acquisitions, and commercial contracts. Collaborated with partners on high-profile business deals.</p>
+            </div>
+            
+            <div class="content-card timeline-item" data-aos="fade-up" data-aos-delay="300">
+                <div class="timeline-marker"></div>
+                <div class="card-icon">
+                    <i class="fas fa-gavel"></i>
+                </div>
+                <h3>Commercial Litigation Firm, Los Angeles</h3>
+                <p class="position">Summer Clerk</p>
+                <p class="period">Summer Program</p>
+                <p>Assisted with litigation cases, legal research, and brief preparation. Gained experience in courtroom procedures and client advocacy.</p>
+            </div>
+            
+            <div class="content-card timeline-item" data-aos="fade-up" data-aos-delay="400">
+                <div class="timeline-marker"></div>
+                <div class="card-icon">
+                    <i class="fas fa-gem"></i>
+                </div>
+                <h3>Louis Vuitton, Beverly Hills</h3>
+                <p class="position">Client Advisor - Flagship Store on Rodeo Drive</p>
+                <p class="period">Professional Experience</p>
+                <p>Developed exceptional client relations and luxury retail skills. Worked with high-profile clientele, enhancing interpersonal and communication abilities.</p>
+            </div>
         </div>
         
         </div>
@@ -143,34 +113,34 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
+                <div class="footer-info">
                     <h3>Saeed Ahmad</h3>
                     <p>Harvard Law School J.D. '24</p>
-                    <p>Attorney at Law</p>
+                    <p>Visiting Fellow, Religious Freedom Clinic</p>
                 </div>
-                <div class="footer-section">
+                <div class="footer-links">
                     <h4>Quick Links</h4>
-                    <ul class="footer-links">
+                    <ul>
                         <li><a href="/education/">Education</a></li>
-                        <li><a href="/skills/">Skills</a></li>
                         <li><a href="/portfolio/">Portfolio</a></li>
+                        <li><a href="/speaking/">Speaking</a></li>
                         <li><a href="/contact/">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-contact">
                     <h4>Connect</h4>
                     <div class="footer-social">
                         <a href="https://www.linkedin.com/in/saeedahmad-" target="_blank" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://www.facebook.com/saeedahmaducla" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://twitter.com/_saeedahmad?lang=en" target="_blank" aria-label="Twitter">
+                        <a href="https://twitter.com/_saeedahmad" target="_blank" aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://www.instagram.com/_saeedahmad/?hl=en" target="_blank" aria-label="Instagram">
+                        <a href="https://www.instagram.com/_saeedahmad/" target="_blank" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/saeedahmaducla" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
                         </a>
                     </div>
                 </div>
@@ -181,14 +151,7 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="../script.js"></script>
 </body>
 </html>

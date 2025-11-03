@@ -3,114 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book Now - Saeed Ahmad</title>
-    <meta name="description" content="Book Now - Saeed Ahmad, Harvard Law J.D. '24">
+    <title>Schedule a Meeting - Saeed Ahmad</title>
+    <meta name="description" content="Schedule a Meeting - Saeed Ahmad, Harvard Law J.D. '24">
     <link rel="stylesheet" href="../styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        .page-header {
-            padding: 8rem 0 4rem;
-            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .page-header::before {
-            content: '';
-            position: absolute;
-            inset: 0;
-            background: 
-                radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
-            animation: gradientShift 15s ease infinite;
-        }
-        
-        .page-header .container {
-            position: relative;
-            z-index: 1;
-        }
-        
-        .page-title {
-            font-size: clamp(2.5rem, 6vw, 4rem);
-            color: white;
-            text-align: center;
-            margin-bottom: 1rem;
-        }
-        
-        .page-subtitle {
-            font-size: 1.2rem;
-            color: var(--accent-light);
-            text-align: center;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        .content-section {
-            padding: var(--spacing-xl) 0;
-        }
-        
-        .content-card {
-            background: white;
-            padding: var(--spacing-lg);
-            border-radius: 16px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
-            margin-bottom: var(--spacing-md);
-        }
-        
-        .content-card h3 {
-            color: var(--primary);
-            margin-bottom: var(--spacing-md);
-            font-size: 1.8rem;
-        }
-        
-        .content-card p {
-            color: var(--text-secondary);
-            line-height: 1.8;
-            margin-bottom: var(--spacing-sm);
-        }
-    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container nav-container">
-            <a href="/" class="logo">Saeed Ahmad</a>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-            <ul class="nav-menu" id="navMenu">
-                <li><a href="/" class="nav-link">Home</a></li>
-                <li><a href="/education/" class="nav-link">Education</a></li>
-                <li><a href="/skills/" class="nav-link">Skills</a></li>
-                <li><a href="/books/" class="nav-link">Books</a></li>
-                <li><a href="/speaking/" class="nav-link">Speaking</a></li>
-                <li><a href="/interviews/" class="nav-link">Interviews</a></li>
-                <li><a href="/portfolio/" class="nav-link">Portfolio</a></li>
-                <li><a href="/press/" class="nav-link">Press</a></li>
-                <li><a href="/contact/" class="nav-link">Contact</a></li>
-                <li class="dropdown">
-                    <a href="#" class="nav-link dropdown-toggle">More <i class="fas fa-chevron-down"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="/consulting/">Consulting</a></li>
-                        <li><a href="/book-now/">Book Now</a></li>
-                        <li><a href="/sponsars/">Sponsors</a></li>
-                    </ul>
-                </li>
-                <li><a href="/wp-content/uploads/2023/08/Ahmad_Saeed-Resume.pdf" class="nav-link resume-link" target="_blank">Resume <i class="fas fa-download"></i></a></li>
-            </ul>
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-content">
+                <a href="/" class="logo">Saeed Ahmad</a>
+                <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="/" class="nav-link">Home</a></li>
+                    <li><a href="/education/" class="nav-link">Education</a></li>
+                    <li><a href="/skills/" class="nav-link">Skills</a></li>
+                    <li><a href="/portfolio/" class="nav-link">Portfolio</a></li>
+                    <li><a href="/books/" class="nav-link">Books</a></li>
+                    <li><a href="/speaking/" class="nav-link">Speaking</a></li>
+                    <li><a href="/press/" class="nav-link">Press</a></li>
+                    <li><a href="/contact/" class="nav-link btn-contact">Contact</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1 class="page-title" data-aos="fade-up">Book Now</h1>
-            <p class="page-subtitle" data-aos="fade-up" data-aos-delay="200">Schedule a Consultation</p>
+            <h1 class="page-title" data-aos="fade-up">Schedule a Meeting</h1>
+            <p class="page-subtitle" data-aos="fade-up" data-aos-delay="100">Book a Consultation or Speaking Engagement</p>
         </div>
     </section>
 
@@ -119,14 +50,74 @@
         <div class="container">
             
         <div class="content-card" data-aos="fade-up">
-            <h3><i class="fas fa-calendar-check"></i> Schedule a Meeting</h3>
-            <p>To schedule a consultation or speaking engagement, please contact Saeed Ahmad via email:</p>
-            <p><strong>Email:</strong> <a href="mailto:saeed@saeedahmad.com">saeed@saeedahmad.com</a></p>
-            <br>
-            <p>Please include:</p>
-            <p>• Purpose of consultation/engagement</p>
-            <p>• Preferred dates and times</p>
-            <p>• Any specific topics or questions</p>
+            <div class="card-icon">
+                <i class="fas fa-calendar-check"></i>
+            </div>
+            <h3>Schedule a Meeting</h3>
+            <p>To schedule a consultation, speaking engagement, or professional meeting, please contact Saeed Ahmad via email with your preferred dates and meeting purpose.</p>
+        </div>
+        
+        <div class="booking-grid">
+            <div class="content-card booking-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-icon">
+                    <i class="fas fa-handshake"></i>
+                </div>
+                <h3>Consultation Requests</h3>
+                <p>Legal consultations on constitutional law, intellectual property, corporate matters, and religious freedom issues.</p>
+                <ul>
+                    <li>Initial consultation</li>
+                    <li>Ongoing legal guidance</li>
+                    <li>Case review and strategy</li>
+                </ul>
+            </div>
+            
+            <div class="content-card booking-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="card-icon">
+                    <i class="fas fa-microphone"></i>
+                </div>
+                <h3>Speaking Engagements</h3>
+                <p>Available for conferences, panels, educational institutions, and professional events.</p>
+                <ul>
+                    <li>Keynote presentations</li>
+                    <li>Panel discussions</li>
+                    <li>Educational seminars</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="content-card contact-form-card" data-aos="fade-up" data-aos-delay="300">
+            <h3>Contact Information Required</h3>
+            <p>When reaching out to schedule a meeting, please include:</p>
+            <div class="info-list">
+                <div class="info-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Purpose of consultation or engagement</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Preferred dates and times</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Duration needed</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Any specific topics or questions</span>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Contact information for follow-up</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="content-card cta-card" data-aos="fade-up" data-aos-delay="400">
+            <h3>Get Started</h3>
+            <p>Ready to schedule? Send an email to begin the conversation.</p>
+            <a href="mailto:saeed@saeedahmad.com?subject=Meeting Request" class="btn btn-primary btn-large">
+                <i class="fas fa-envelope"></i> Email to Schedule
+            </a>
         </div>
         
         </div>
@@ -136,34 +127,34 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-section">
+                <div class="footer-info">
                     <h3>Saeed Ahmad</h3>
                     <p>Harvard Law School J.D. '24</p>
-                    <p>Attorney at Law</p>
+                    <p>Visiting Fellow, Religious Freedom Clinic</p>
                 </div>
-                <div class="footer-section">
+                <div class="footer-links">
                     <h4>Quick Links</h4>
-                    <ul class="footer-links">
+                    <ul>
                         <li><a href="/education/">Education</a></li>
-                        <li><a href="/skills/">Skills</a></li>
                         <li><a href="/portfolio/">Portfolio</a></li>
+                        <li><a href="/speaking/">Speaking</a></li>
                         <li><a href="/contact/">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-section">
+                <div class="footer-contact">
                     <h4>Connect</h4>
                     <div class="footer-social">
                         <a href="https://www.linkedin.com/in/saeedahmad-" target="_blank" aria-label="LinkedIn">
                             <i class="fab fa-linkedin"></i>
                         </a>
-                        <a href="https://www.facebook.com/saeedahmaducla" target="_blank" aria-label="Facebook">
-                            <i class="fab fa-facebook"></i>
-                        </a>
-                        <a href="https://twitter.com/_saeedahmad?lang=en" target="_blank" aria-label="Twitter">
+                        <a href="https://twitter.com/_saeedahmad" target="_blank" aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                        <a href="https://www.instagram.com/_saeedahmad/?hl=en" target="_blank" aria-label="Instagram">
+                        <a href="https://www.instagram.com/_saeedahmad/" target="_blank" aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.facebook.com/saeedahmaducla" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook"></i>
                         </a>
                     </div>
                 </div>
@@ -174,14 +165,7 @@
         </div>
     </footer>
 
-    <!-- Back to Top Button -->
-    <button class="back-to-top" id="backToTop" aria-label="Back to top">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
-    <!-- Scripts -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="../script.js"></script>
 </body>
 </html>

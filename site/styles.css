@@ -528,3 +528,567 @@ a {
         font-size: 0.95rem;
     }
 }
+
+/* Page Header Styles */
+.page-header {
+    padding: 8rem 0 4rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: 
+        radial-gradient(circle at 20% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 50%),
+        radial-gradient(circle at 80% 80%, rgba(212, 175, 55, 0.1) 0%, transparent 50%);
+}
+
+.page-header .container {
+    position: relative;
+    z-index: 1;
+}
+
+.page-title {
+    font-size: clamp(2.5rem, 6vw, 4rem);
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.page-subtitle {
+    font-size: 1.25rem;
+    color: var(--accent);
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* Content Section */
+.content-section {
+    padding: var(--spacing-xl) 0;
+}
+
+.content-card {
+    background: white;
+    padding: var(--spacing-lg);
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    margin-bottom: var(--spacing-md);
+    transition: all 0.3s ease;
+}
+
+.content-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.content-card h3 {
+    color: var(--primary);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.8rem;
+}
+
+.content-card p {
+    color: var(--text-medium);
+    line-height: 1.8;
+    margin-bottom: var(--spacing-sm);
+}
+
+.card-icon {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+/* Skills Page Styles */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.skill-card {
+    height: 100%;
+}
+
+.skill-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.skill-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateX(5px);
+}
+
+.skill-item i {
+    color: var(--accent);
+    font-size: 1.25rem;
+}
+
+.skill-item:hover i {
+    color: white;
+}
+
+/* Speaking Page Styles */
+.topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.topic-item {
+    padding: 2rem;
+    background: var(--bg-light);
+    border-radius: 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.topic-item:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-5px);
+}
+
+.topic-item i {
+    font-size: 3rem;
+    color: var(--accent);
+    margin-bottom: 1rem;
+}
+
+.topic-item:hover i {
+    color: white;
+}
+
+.topic-item h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.topic-item:hover h4 {
+    color: white;
+}
+
+.topic-item p {
+    color: var(--text-medium);
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.topic-item:hover p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+/* Interview Page Styles */
+.interview-topics {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.topic-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-light);
+    border-radius: 50px;
+    color: var(--primary);
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+.topic-badge:hover {
+    background: var(--primary);
+    color: white;
+    transform: translateY(-3px);
+}
+
+.topic-badge i {
+    color: var(--accent);
+}
+
+.topic-badge:hover i {
+    color: white;
+}
+
+/* Portfolio Timeline Styles */
+.timeline {
+    position: relative;
+    padding-left: 3rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--primary) 0%, var(--accent) 100%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+.timeline-marker {
+    position: absolute;
+    left: -3.6rem;
+    top: 1.5rem;
+    width: 20px;
+    height: 20px;
+    background: var(--accent);
+    border-radius: 50%;
+    border: 4px solid white;
+    box-shadow: 0 0 0 3px var(--accent);
+}
+
+.position {
+    font-weight: 600;
+    color: var(--accent);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.period {
+    color: var(--text-light);
+    font-size: 0.95rem;
+    font-style: italic;
+    margin-bottom: 1rem;
+}
+
+/* Press Page Styles */
+.press-highlights {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.press-item {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+    background: var(--bg-light);
+    border-radius: 12px;
+    transition: all 0.3s ease;
+}
+
+.press-item:hover {
+    background: white;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.press-item i {
+    font-size: 3rem;
+    color: var(--accent);
+    flex-shrink: 0;
+}
+
+.press-item h4 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.press-item p {
+    color: var(--text-medium);
+    margin: 0;
+}
+
+/* Contact Page Styles */
+.contact-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.contact-card {
+    text-align: center;
+}
+
+.contact-detail {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary);
+}
+
+.contact-detail a {
+    color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+.contact-detail a:hover {
+    color: var(--accent);
+}
+
+.social-links-large {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    padding: 1.5rem;
+    background: var(--bg-light);
+    border-radius: 12px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.social-link i {
+    font-size: 1.5rem;
+}
+
+.social-link.linkedin:hover {
+    background: #0077b5;
+    color: white;
+}
+
+.social-link.twitter:hover {
+    background: #1da1f2;
+    color: white;
+}
+
+.social-link.instagram:hover {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    color: white;
+}
+
+.social-link.facebook:hover {
+    background: #1877f2;
+    color: white;
+}
+
+/* Consulting Page Styles */
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.service-card {
+    text-align: center;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover {
+    border-color: var(--accent);
+}
+
+.service-icon {
+    width: 80px;
+    height: 80px;
+    background: var(--bg-light);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--accent);
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.service-card:hover .service-icon {
+    background: var(--accent);
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Booking Page Styles */
+.booking-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.booking-card ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+}
+
+.booking-card li {
+    padding: 0.75rem 0;
+    border-bottom: 1px solid var(--border);
+    color: var(--text-medium);
+}
+
+.booking-card li:last-child {
+    border-bottom: none;
+}
+
+.info-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background: var(--bg-light);
+    border-radius: 8px;
+}
+
+.info-item i {
+    color: var(--accent);
+    font-size: 1.25rem;
+    flex-shrink: 0;
+}
+
+/* CTA Styles */
+.cta-card {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-card h3 {
+    color: white;
+}
+
+.cta-card p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.cta-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 2rem;
+    flex-wrap: wrap;
+}
+
+.btn-large {
+    padding: 1.25rem 2.5rem;
+    font-size: 1.125rem;
+}
+
+/* Info Box */
+.info-box {
+    background: var(--bg-light);
+    padding: 2rem;
+    border-radius: 12px;
+    margin-top: 2rem;
+    border-left: 4px solid var(--accent);
+}
+
+.info-box ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+}
+
+.info-box li {
+    color: var(--text-medium);
+    margin-bottom: 0.5rem;
+}
+
+/* Utility Classes */
+.degree {
+    font-size: 1.125rem;
+    color: var(--primary);
+}
+
+.highlight {
+    font-size: 1.1rem;
+    color: var(--accent);
+    font-weight: 600;
+    margin: 1rem 0;
+}
+
+.achievements {
+    margin-top: 1.5rem;
+}
+
+.achievements p {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+}
+
+.achievements i {
+    color: var(--accent);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .page-header {
+        padding: 6rem 0 3rem;
+    }
+    
+    .timeline {
+        padding-left: 2rem;
+    }
+    
+    .timeline::before {
+        left: 0.5rem;
+    }
+    
+    .timeline-marker {
+        left: -0.6rem;
+    }
+    
+    .skills-grid,
+    .services-grid,
+    .booking-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .topic-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .social-links-large {
+        grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+    }
+    
+    .press-item {
+        flex-direction: column;
+        text-align: center;
+    }
+}
