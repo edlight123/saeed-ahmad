@@ -1,47 +1,96 @@
-# Saeed Ahmad – Modern Portfolio (Static)
+# Saeed Ahmad - Portfolio Website
 
-This repo contains a modern, fast, and accessible static website template tailored for a personal portfolio (inspired by saeed-ahmad.com) without copying any copyrighted content.
+A modern, responsive portfolio website for Saeed Ahmad, Harvard Law J.D. '24.
 
-## What's inside
+## 🎨 Design Features
 
-- No build tools required — just open `site/index.html`.
-- Responsive layout, dark mode, and subtle animations.
-- Sections: Hero, About, Experience, Projects, Publications, Contact.
-- Accessible navigation with skip link and scroll spy.
-- SEO basics + Person schema.
+- **Modern UI/UX**: Clean, professional design with smooth animations
+- **Responsive**: Mobile-first design that works on all devices
+- **Performance**: Optimized for fast loading and smooth interactions
+- **Accessibility**: WCAG compliant with semantic HTML
+- **SEO**: Optimized meta tags and structured data
 
-## Customize content
+## 🚀 Technologies
 
-You can edit `site/index.html` directly, or use `site/content.json` to keep content separate and easily reusable. If `content.json` exists, the page loads it and renders sections dynamically.
+- **HTML5**: Semantic markup
+- **CSS3**: Modern features including CSS Grid, Flexbox, Custom Properties
+- **JavaScript**: Vanilla JS with AOS (Animate On Scroll) library
+- **Fonts**: Inter (body) and Playfair Display (headings)
+- **Icons**: Font Awesome 6
 
-- Replace text placeholders (bio, roles, projects, publications, links) in `index.html` or fill them in `content.json`.
-- Update social/profile links in the Contact section and in JSON-LD.
-- Replace `assets/avatar.svg` with your own avatar/photo if desired.
+## 📱 Sections
 
-### Using content.json
+- **Hero**: Eye-catching introduction with credentials and social links
+- **About**: Professional biography
+- **Quick Links**: Easy navigation to all sections
+  - Education
+  - Skills
+  - Books
+  - Speaking Engagements
+  - Interviews
+  - Portfolio
+  - Press Coverage
+  - Contact
 
-Edit `site/content.json` fields:
-- hero: name, tagline, location, currently
-- about: bio, expertise[], highlights[]
-- experience: [{ role, org, start, end, summary, bullets[] }]
-- projects: [{ name, tags[], desc, demo, code }]
-- publications: [{ title, venue, year, pdf }]
-- contact: { email, links: [{ label, url }], cv }
+## 🎨 Color Scheme
 
-## Run locally
+- **Primary**: Navy Blue (#1a365d)
+- **Accent**: Gold (#d4af37)
+- **Text**: Dark Gray (#1a202c)
+- **Background**: White and Light Gray
 
-You can open the file directly in a browser, or serve it with a tiny web server for best results.
+## 🛠️ Local Development
 
-```bash
-# Serve the site at http://localhost:8000
-python3 -m http.server -d site 8000
-```
+1. Clone the repository:
+\`\`\`bash
+git clone https://github.com/edlight123/saeed-ahmad.git
+cd saeed-ahmad/site
+\`\`\`
 
-## Deploy
+2. Start a local server:
+\`\`\`bash
+python3 -m http.server 8000
+\`\`\`
 
-- GitHub Pages: push this repo, then enable Pages from the `site/` folder in repository settings.
-- Any static host (Netlify, Vercel, Cloudflare Pages) can deploy `site/` as-is.
+3. Open your browser to \`http://localhost:8000\`
 
-## Content rights note
+## 📦 Deployment
 
-If you own the rights to the content at https://saeed-ahmad.com/, you can paste it into the placeholders here. Otherwise, please provide your own text and images.
+The site is configured for deployment on Vercel:
+- Automatically deploys on push to main branch
+- Custom domain support
+- SSL certificate included
+
+## 📝 Content Updates
+
+To update content:
+1. Edit \`site/index.html\` for homepage content
+2. Update individual section pages in their respective folders
+3. Commit and push changes
+
+## 📄 File Structure
+
+\`\`\`
+site/
+├── index.html          # Main homepage (modern design)
+├── index.old.html      # Original WordPress clone (backup)
+├── styles.css          # Modern CSS styling
+├── script.js           # Interactive JavaScript
+├── education/          # Education page
+├── skills/             # Skills page
+├── books/              # Books page
+├── speaking/           # Speaking engagements
+├── interviews/         # Media interviews
+├── portfolio/          # Professional portfolio
+├── press/              # Press coverage
+├── contact/            # Contact form
+├── consulting/         # Consulting services
+├── book-now/           # Booking page
+├── sponsars/           # Sponsors page
+└── wp-content/         # WordPress assets (preserved)
+\`\`\`
+
+## 🤝 Credits
+
+Designed and developed for Saeed Ahmad
+© 2025 All rights reserved
