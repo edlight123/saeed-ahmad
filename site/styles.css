@@ -244,8 +244,9 @@ a {
 .profile-photo {
     width: 100%;
     aspect-ratio: 1;
-    background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
     border-radius: 20px;
+    object-fit: cover;
+    display: block;
 }
 
 /* About Section */
