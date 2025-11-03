@@ -20,17 +20,12 @@ A modern, responsive portfolio website for Saeed Ahmad, Harvard Law J.D. '24.
 
 ## 📱 Sections
 
-- **Hero**: Eye-catching introduction with credentials and social links
-- **About**: Professional biography
-- **Quick Links**: Easy navigation to all sections
-  - Education
-  - Skills
-  - Books
-  - Speaking Engagements
-  - Interviews
-  - Portfolio
-  - Press Coverage
-  - Contact
+- **Hero**: Eye-catching introduction with credentials, portfolio CTA, and social links
+- **Profile Overview**: Harvard journey, strategic pillars, and key appointments
+- **Signature Work**: Grid of advocacy, speaking, publications, and media highlights
+- **Spotlights**: Collaboration pathways for interviews, consulting, and booking
+- **Call to Action**: Engagement banner directing visitors to connect or submit speaking requests
+- **Footer**: Quick access to core pages and social channels
 
 ## 🎨 Color Scheme
 
