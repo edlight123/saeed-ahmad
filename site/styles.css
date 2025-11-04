@@ -176,9 +176,17 @@ a {
     position: relative;
     z-index: 1;
     display: grid;
-    gap: clamp(2rem, 5vw, 4rem);
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    align-items: stretch;
+    gap: clamp(2rem, 4vw, 3.5rem);
+    grid-template-columns: minmax(0, 1.2fr) minmax(340px, 0.8fr);
+    align-items: center;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 1.35rem;
+    max-width: 720px;
+    align-items: flex-start;
 }
 
 .hero-tag {
@@ -231,7 +239,7 @@ a {
 .hero-buttons {
     display: flex;
     gap: 1rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     flex-wrap: wrap;
 }
 
@@ -239,7 +247,7 @@ a {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 
 .insight-card {
@@ -275,8 +283,8 @@ a {
 .hero-image {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    align-items: stretch;
+    gap: 1.75rem;
+    align-items: center;
 }
 
 .hero-stats {
@@ -285,6 +293,8 @@ a {
     padding: 0;
     display: grid;
     gap: 1rem;
+    width: 100%;
+    max-width: 460px;
 }
 
 .hero-stat {
@@ -377,7 +387,7 @@ a {
     border-radius: 28px;
     box-shadow: 0 25px 60px rgba(26, 54, 93, 0.18);
     overflow: hidden;
-    width: min(100%, 420px);
+    width: min(100%, 460px);
     margin: 0;
 }
 
@@ -1343,6 +1353,7 @@ a {
         text-align: center;
     }
     .hero-content { text-align: center; }
+    .hero-text { align-items: center; }
     .hero-tag { justify-content: center; }
     .hero-title { font-size: 2.1rem; }
     .hero-buttons { justify-content: center; }
